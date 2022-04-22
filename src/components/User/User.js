@@ -16,6 +16,8 @@ const handleFormSubmit = (event) => {
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
+      alert("your account creation successfully");
+      event.target.reset();
     });
 };
 const User = () => {
